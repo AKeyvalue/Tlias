@@ -30,6 +30,7 @@ public class DeptController {
     public Result delete(@PathVariable Integer id){
        log.info("根据id删除：{}" ,id);
        deptService.delete(id);
+        System.out.println("test");
         return Result.success();
     }
 
